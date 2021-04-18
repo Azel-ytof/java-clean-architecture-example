@@ -22,4 +22,9 @@ public class UserEntity {
     public String getEmail() {
         return email;
     }
+
+    @Override
+    public String toString() {
+        return String.format("{ Last name = %s ; First name = %s ; Email = %s }", lastName, firstName, email);
+    }
 }
